@@ -142,13 +142,13 @@ p {
 /* LINKS */
 
 a {
-    color: teal;
+    color: steelblue;
     text-decoration: none;
 }
 
 a:hover {
-    color: white;
-    text-decoration: underline;
+    color: teal;
+    text-decoration: none;
 }
 
 
@@ -500,12 +500,17 @@ var length = path.getTotalLength(); */
     opacity: 1;
     height: 100%;
     visibility: visible;
+    /* padding-bottom: .5em; */
 }
 
 .site-nav[data-navstate="closed"] .primary-nav {
     height: 95%;
     opacity: 0;
     visibility: hidden;
+}
+
+ul.primary-nav li {
+    padding-bottom: .5em;
 }
 
 .site-nav .menu-button #line1,
@@ -1013,6 +1018,7 @@ body {
     filter: brightness(1.05);
     transition: all ease-in-out 0.2s;
     display: block;
+    filter: grayscale(100%);
 }
 
 .thumbgrid a:hover img {
@@ -1169,7 +1175,7 @@ body {
 }
 
 .hover-content h3 {
-    color: white;
+    color: red;
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -1186,54 +1192,61 @@ li {
 
 /* Hover Caps */
 
+.hovercaps a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
 
-/*     
-    .hovercaps a {
-        display: block;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .hovercaps img {
-        display: block;
-    }
-    
-    .hovercaps .caption {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #333;
-        display: grid;
-        place-items: center;
-        transition: all .4s cubic-bezier(1, 0, 1, 1);
-        transform: translateY(-100%);
-        font-family: "mr-eaves-xl-modern"
-    }
-    
-    .hovercaps .caption.blue {
-        background-color: rgb(153, 0, 64);
-        transform: translateY(-100%);
-    }
-    
-    .hovercaps .caption.purple {
-        background-color: rgb(141, 12, 226);
-        transform: translateY(-100%);
-    }
-    
-    .hovercaps .caption.turquoize {
-        background-color: rgb(16, 86, 236);
-        transform: translateY(-100%);
-    }
-    
-    .hovercaps a:hover .caption {
-        transform: translateY(0);
-    }
-    
-    .hovercaps h3 {
-        margin: 0;
-    } */
+.hovercaps img {
+    display: block;
+}
+
+.hovercaps .caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180%;
+    /* background-color: #333; */
+    display: grid;
+    place-items: center;
+    transition: all .4s cubic-bezier(1, 0, 1, 1);
+    transform: translateY(-100%);
+    font-family: "mr-eaves-xl-modern";
+    /* border: 1px solid teal; */
+}
+
+
+/* . caption.blue h3 if you want a box around your text in the index page */
+
+
+/* .caption.blue h3 {
+    border: 5px solid teal;
+} */
+
+.hovercaps .caption.blue {
+    /* background-color: rgb(153, 0, 64); */
+    transform: translateY(-100%);
+}
+
+.hovercaps .caption.purple {
+    background-color: rgb(141, 12, 226);
+    transform: translateY(-100%);
+}
+
+.hovercaps .caption.turquoize {
+    background-color: rgb(16, 86, 236);
+    transform: translateY(-100%);
+}
+
+.hovercaps a:hover .caption {
+    transform: translateY(0);
+}
+
+.hovercaps h3 {
+    margin: 0;
+}
 
 
 /* about this project section */
