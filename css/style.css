@@ -147,7 +147,7 @@ a {
 }
 
 a:hover {
-    color: teal;
+    color: black;
     text-decoration: none;
 }
 
@@ -356,7 +356,7 @@ body {
 
 .site-header a,
 .site-footer a {
-    color: rgb(207, 35, 87);
+    color: teal;
     /* color: rgba(0,0,0,.8);
      */
     text-decoration: none;
@@ -552,8 +552,11 @@ ul.primary-nav li {
     margin: 0;
 }
 
+
+/* The 3 lines on the top page of index */
+
 .menu-button svg {
-    fill: rgb(207, 35, 87);
+    fill: teal;
     cursor: pointer;
     position: relative;
     z-index: 20;
@@ -1064,7 +1067,7 @@ body {
     font-size: 125px;
     font-family: "mr-eaves-xl-modern";
     display: inline-block;
-    background-image: linear-gradient(to bottom, rgb(207, 35, 87), white);
+    background-image: linear-gradient(to bottom, teal, white);
     color: transparent;
     -webkit-background-clip: text;
     text-align: center;
