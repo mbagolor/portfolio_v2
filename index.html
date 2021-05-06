@@ -82,7 +82,7 @@
                     <a href="santorini.html">
                         <img src="img/santorini/santorini.png" alt="placeholder" />
                         <div class="caption blue">
-                            <h3>LOGO DESING</h3>
+                            <h3>LOGO DESIGN</h3>
                         </div>
                     </a>
                 </li>
@@ -152,6 +152,22 @@
 
     <!-- SCROLL JS FILE -->
     <script src="js/scroll.js"></script>
+
+    <script>
+        // CHANGE ACTIVE STATE FOR ALL SECTIONS WITH INTERSECTION OBSERVER
+        const myobserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.setAttribute('data-sectionstate', 'active');
+                } else {
+                    entry.target.setAttribute('data-sectionstate', 'inactive');
+                }
+            });
+        });
+        document.querySelectorAll('.thumbgrid li').forEach((item) => {
+            myobserver.observe(item);
+        });
+    </script>
 
     <!-- MAIN JS FILE -->
     <script src="js/script.js"></script>

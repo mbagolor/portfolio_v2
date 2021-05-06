@@ -1199,48 +1199,23 @@ li {
 
 .hovercaps .caption {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
-    width: 100%;
-    height: 180%;
-    /* background-color: #333; */
-    display: grid;
-    place-items: center;
     transition: all 0.4s cubic-bezier(1, 0, 1, 1);
-    transform: translateY(-100%);
+    transform: translateY(100%);
+    /* opacity: 0; */
     font-family: "mr-eaves-xl-modern";
+    background: lightblue;
     /* border: 1px solid teal; */
-}
-
-
-/* . caption.blue h3 if you want a box around your text in the index page */
-
-
-/* .caption.blue h3 {
-    border: 5px solid teal;
-} */
-
-.hovercaps .caption.blue {
-    /* background-color: rgb(153, 0, 64); */
-    transform: translateY(-100%);
-}
-
-.hovercaps .caption.purple {
-    background-color: rgb(141, 12, 226);
-    transform: translateY(-100%);
-}
-
-.hovercaps .caption.turquoize {
-    background-color: rgb(16, 86, 236);
-    transform: translateY(-100%);
 }
 
 .hovercaps a:hover .caption {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .hovercaps h3 {
-    margin: 0;
+    margin: 1em;
 }
 
 
