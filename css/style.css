@@ -84,14 +84,14 @@ h2 {
     font-size: 2.25em;
     /* 36px based on a 16px em */
     line-height: 1.1;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 h3 {
     font-size: 1.5em;
     /* 24px based on a 16px em */
     line-height: 1.2;
-    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
 h4 {
@@ -188,6 +188,11 @@ img {
     height: auto;
 }
 
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
 
 /* BUTTONS */
 
@@ -241,7 +246,7 @@ body {
 
 .container {
     max-width: 1000px;
-    padding: 0 1em;
+    /* padding: 0 1em; */
     margin: 0 auto;
     /* overflow-x: hidden; */
 }
@@ -372,6 +377,7 @@ body {
     padding: 3em 0 2em 0;
     text-transform: uppercase;
     letter-spacing: 0.15em;
+    margin-top: 5em;
 }
 
 
@@ -381,9 +387,10 @@ body {
     display: block;
     width: 250px;
     position: absolute;
-    top: 30%;
+    top: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* border: 5px solid red; */
 }
 
 path {
@@ -413,7 +420,7 @@ var length = path.getTotalLength(); */
         display: block;
         width: 250px;
         position: absolute;
-        top: 40%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -510,7 +517,7 @@ var length = path.getTotalLength(); */
 }
 
 ul.primary-nav li {
-    padding-bottom: .5em;
+    padding-bottom: 0.5em;
 }
 
 .site-nav .menu-button #line1,
@@ -563,23 +570,6 @@ ul.primary-nav li {
     width: 30px;
     padding: 3px;
 }
-
-
-/* MENU BUTTON */
-
-
-/* .menu-button {
-    position: absolute;
-    left: -9999px;
-    padding: .5em;
-}
-.menu-button:hover {
-    cursor: pointer;
-}
-.menu-button::selection {
-    color: none;
-    background: none;
-} */
 
 
 /* TOGGLE-NAV */
@@ -655,15 +645,10 @@ ul.primary-nav li {
 
 /* SITE MAIN (Main Content Area) */
 
-.site-main {}
-
-
-/* SECTIONS */
-
 section.hero,
 section.hero-sub {
     background-color: white;
-    padding: 15em 0;
+    padding: 5em 0;
     display: block;
     overflow: hidden;
 }
@@ -682,6 +667,7 @@ section.hero-sub {
 
 .hero h1,
 .hero-sub h1 {
+    padding-top: 1.5em;
     color: black;
     font-size: 3em;
     line-height: 1;
@@ -740,9 +726,10 @@ article .date+p::first-line {
 }
 
 
-/* ---------Lula Logo ---------*/
+/*  ---------------SUB PAGE: LULA LOGO ---------------  */
 
-.lula-logo {
+.lula-logo,
+.hero-img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -868,7 +855,7 @@ form label {
     display: block;
 }
 
-form input,
+s form input,
 form textarea {
     font-family: "mr-eaves-xl-modern", Helvetica, Arial, sans-serif;
     font-size: 1em;
@@ -977,6 +964,20 @@ body {
 
 .site-navigation {
     font-family: adobe-jenson-pro, serif, Helvetica, Arial, sans-serif;
+}
+
+
+/* Custom Sections */
+
+#work {
+    padding-bottom: 4em;
+}
+
+.text-centered p {
+    text-align: left;
+    max-width: 26em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -1205,7 +1206,7 @@ li {
     /* background-color: #333; */
     display: grid;
     place-items: center;
-    transition: all .4s cubic-bezier(1, 0, 1, 1);
+    transition: all 0.4s cubic-bezier(1, 0, 1, 1);
     transform: translateY(-100%);
     font-family: "mr-eaves-xl-modern";
     /* border: 1px solid teal; */
@@ -1248,9 +1249,13 @@ li {
 .meta-data {
     /* background: #dedede; */
     /* text-align: center; */
-    display: flex;
-    justify-content: center;
     padding: 4em 0;
+    justify-content: center;
+    display: flex;
+}
+
+.text-left {
+    text-align: left;
 }
 
 .col ul li {
