@@ -660,37 +660,42 @@ ul.primary-nav li {
 
 /* SECTIONS */
 
-section {
-    padding: 4em 0;
-}
-
-section.hero {
+section.hero,
+section.hero-sub {
     background-color: white;
     padding: 15em 0;
     display: block;
     overflow: hidden;
 }
 
-.hero {
+section.hero-sub {
+    padding: 0;
+}
+
+.hero,
+.hero-sub {
     text-align: center;
     /* background-color: #ddd; */
     /* padding: 6em 1em; */
     display: block;
 }
 
-.hero h1 {
+.hero h1,
+.hero-sub h1 {
     color: black;
     font-size: 3em;
     line-height: 1;
 }
 
-.hero h2 {
+.hero h2,
+.hero-sub h2 {
     color: black;
     font-size: 2em;
     line-height: 1.1;
 }
 
-.hero p {
+.hero p,
+.hero-sub p {
     margin-left: auto;
     margin-right: auto;
 }
@@ -732,6 +737,22 @@ article .date+p::first-line {
     width: 50px;
     border-bottom: 0.15em solid rgba(0, 0, 0, 0.1);
     margin: 0.5em auto;
+}
+
+
+/* ---------Lula Logo ---------*/
+
+.lula-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 3em 0;
+}
+
+.title-space {
+    padding: 6em;
 }
 
 
@@ -834,16 +855,6 @@ body.demo::before {
         content: "EX-Larger Screen (1200px + )";
         background: teal;
     }
-}
-
-
-/* CODE FROM AI */
-
-
-/* Main Sections */
-
-section {
-    padding: 1.5em 0;
 }
 
 
@@ -966,26 +977,6 @@ body {
 
 .site-navigation {
     font-family: adobe-jenson-pro, serif, Helvetica, Arial, sans-serif;
-}
-
-
-/* Custom Sections */
-
-#work {
-    padding-bottom: 4em;
-}
-
-.hero {
-    /* background: #dedede; */
-    text-align: center;
-    padding: 4em 0;
-}
-
-.text-centered p {
-    text-align: left;
-    max-width: 26em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 
@@ -1256,12 +1247,10 @@ li {
 
 .meta-data {
     /* background: #dedede; */
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
     padding: 4em 0;
-}
-
-.text-left {
-    text-align: left;
 }
 
 .col ul li {
