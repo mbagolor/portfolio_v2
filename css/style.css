@@ -447,6 +447,16 @@ var length = path.getTotalLength(); */
     }
 }
 
+.scroll-element[data-view="hidden"] {
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.scroll-element[data-view="visible"] {
+    opacity: 1;
+    transition: opacity 0.4s;
+}
+
 
 /* SITE FOOTER */
 
